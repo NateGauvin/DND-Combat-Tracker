@@ -1,0 +1,10 @@
+Name: Aonari Arashi
+STR: 18
+DEX: 12
+CON: 12
+INT: 11
+WIS: 9
+CHA: 16
+HP: 37
+AC: 11
+External_Initiative_Bonus: 0

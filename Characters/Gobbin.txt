@@ -1,0 +1,10 @@
+Name: Gobbin
+STR: 15
+DEX: 15
+CON: 13
+INT: 10
+WIS: 10
+CHA: 14
+HP: 41
+AC: 16
+External_Initiative_Bonus: 0

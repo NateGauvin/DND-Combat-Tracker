@@ -1,0 +1,10 @@
+Name: Nate
+STR: 14
+DEX: 14
+CON: 14
+INT: 14
+WIS: 14
+CHA: 14
+HP: 14
+AC: 14
+External_Initiative_Bonus: 0

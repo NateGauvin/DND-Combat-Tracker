@@ -30,14 +30,11 @@ public class PlayerCharacter implements Comparable<PlayerCharacter> {
     public void takingDamage(int damageTaken, boolean negativeDamage) {
         currHitPoints = currHitPoints - damageTaken;
         if(currHitPoints <=0 && !negativeDamage) {currHitPoints = 0;}
-        System.out.println(name + " has " + currHitPoints + " hp left.");
-        if(currHitPoints <= 0) {System.out.println(); System.out.println(name + " is down!");}
     }
 
     public void healing(int healingAmt) {
         currHitPoints = currHitPoints + healingAmt;
         if (currHitPoints >= maxHitPoints) {currHitPoints = maxHitPoints;}
-        System.out.println(name + " has " + currHitPoints + " hp.");
     }
 
     public void calculateInitiative() {

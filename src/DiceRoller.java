@@ -21,23 +21,38 @@ public class DiceRoller {
         diceNumber.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                upperBound = Integer.parseInt(diceNumber.getText());
+                if (diceNumber.getText().matches("[0-9]+")) {
+                    upperBound = Integer.parseInt(diceNumber.getText());
+                }
+                else {
+                    returnRoll.setText("Please enter a positive integer.");
+                }
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                upperBound = Integer.parseInt(diceNumber.getText());
+                if (diceNumber.getText().matches("[0-9]+")) {
+                    upperBound = Integer.parseInt(diceNumber.getText());
+                }
+                else {
+                    returnRoll.setText("Please enter a positive integer.");
+                }
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                upperBound = Integer.parseInt(diceNumber.getText());
+                if (diceNumber.getText().matches("[0-9]+")) {
+                    upperBound = Integer.parseInt(diceNumber.getText());
+                }
+                else {
+                    returnRoll.setText("Please enter a positive integer.");
+                }
             }
         });
         rollButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (upperBound < 1) {
+                if (upperBound >= 1) {
                     returnRoll.setText("You have rolled a: " + rand.nextInt(upperBound + 1));
                 }
                 else {returnRoll.setText("Please enter a positive value.");}

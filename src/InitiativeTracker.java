@@ -12,6 +12,7 @@ public class InitiativeTracker {
     public void setNegativeDamage(boolean bool) {
         this.negativeDamage = bool;
     }
+    public boolean getNegativeDamage() {return negativeDamage;}
     private final ArrayList<PlayerCharacter> entityList = new ArrayList<>();
     public void createEntity(Scanner userInput) {
         System.out.println("This is to create an entity that is not recorded in the system.");

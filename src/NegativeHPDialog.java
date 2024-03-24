@@ -20,7 +20,7 @@ public class NegativeHPDialog {
                 initiativeTracker.setNegativeDamage(false);
                 dialog.setVisible(false);
                 dialog.dispose();
-                done = true;
+                MainMenu mainMenu = new MainMenu(initiativeTracker);
             }
         });
         yes.addActionListener(new ActionListener() {
@@ -29,12 +29,8 @@ public class NegativeHPDialog {
                 initiativeTracker.setNegativeDamage(true);
                 dialog.setVisible(false);
                 dialog.dispose();
-                done = true;
+                MainMenu mainMenu = new MainMenu(initiativeTracker);
             }
         });
-    }
-
-    public boolean areWeDoneHere() {
-        return done;
     }
 }

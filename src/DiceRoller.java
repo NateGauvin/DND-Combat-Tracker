@@ -53,7 +53,7 @@ public class DiceRoller {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (upperBound >= 1) {
-                    returnRoll.setText("You have rolled a: " + rand.nextInt(upperBound + 1));
+                    returnRoll.setText("You have rolled a: " + rand.nextInt(upperBound)+1);
                 }
                 else {returnRoll.setText("Please enter a positive value.");}
             }

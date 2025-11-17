@@ -17,6 +17,7 @@ public class InitiativeCollector {
         initiativeCollector.add(panel1);
         initiativeCollector.setSize(400,300);
         initiativeCollector.setVisible(true);
+        initiativeCollector.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         rollLabel.setText("What did " + initiativeTracker.getPlayerCharacter(counter).getName() + " roll?");
         textField1.getDocument().addDocumentListener(new DocumentListener() {
             @Override

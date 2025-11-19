@@ -3,3 +3,5 @@ This Java Swing application was made using IntelliJ's Swing UI Designer for assi
 This tracker allows you to create character files and bring them into the program to run in D&D combat encounter. You can keep track of initiative, hit points, armor class, and stats. The tracker starts off with two modes, negative damage or flat damage. One brings HP past zero, and the other only brings HP down to zero. While all other stats are self-explanatory for D&D, External Initiative Bonus refers to any bonuses to initiative granted through Alert and other feats.
 
 This tracker is not limited to player characters, and can be used for enemies and NPCs all the same. To delete characters, simply delete their respective character's .txt file.
+
+For this application to work, the Release file must be run in a directory containing a "Characters" folder.
